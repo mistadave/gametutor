@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
+## Angular Tutorial
+
+* [Best Practice Organize](https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e)
+* [Managing Local Storage](https://blog.briebug.com/blog/managing-local-storage-in-angular)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
