@@ -7,6 +7,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * [Best Practice Organize](https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e)
 * [Managing Local Storage](https://blog.briebug.com/blog/managing-local-storage-in-angular)
 
+## CLI
+
+Angular CLI commands
+
+```bash
+# creates a route in the app routing
+ng g m my-name --route route-name --module app
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
