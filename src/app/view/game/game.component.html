@@ -1,1 +1,5 @@
-<p>game works!</p>
+<div *ngIf="game">
+    <a routerLink="detail/{{game.id}}" class="card">
+        <h1>{{game.name}}</h1>
+    </a>
+</div>

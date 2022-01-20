@@ -1,3 +1,4 @@
-<h1>View Home</h1>
-
-<app-game></app-game>
+<h1>Games Home</h1>
+<div>
+    <app-game *ngFor="let game of games" [game]="game"></app-game>
+</div>

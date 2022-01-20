@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./view/view.module').then(m => m.ViewModule) },
+  { path: '', redirectTo:'games', pathMatch: 'full'},
+  { path: 'games', loadChildren: () => import('./view/view.module').then(m => m.ViewModule) },
+  
   {
     path: 'edit', loadChildren: () => import('./edit/edit.module').then(m => m.EditModule), canActivate: [],
     data: { roles: ['admin'] }
