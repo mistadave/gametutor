@@ -1,5 +1,8 @@
 export interface Game {
-    id: number;
+    id: string;
     name: string;
     link: string;
+    type?: string;
+    releaseDate?: Date;
+    platform?: string[];
 }
