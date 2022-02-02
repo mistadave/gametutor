@@ -1,1 +1,13 @@
-<p>game-detail works!</p>
+<div *ngIf="game">
+    <h1>
+        {{game.name}}
+    </h1>
+    <div>
+        <ul *ngFor="let link of links">
+            <li>
+                {{ link }}
+            </li>
+        </ul>
+
+    </div>
+</div>
