@@ -11,32 +11,34 @@ import { GameService } from '../game.service';
 export class GameDetailComponent implements OnInit {
   game: Game | undefined;
   links?: string[];
+  private id: string | undefined;
+
   constructor(private gameService: GameService,
       private activatedRoute: ActivatedRoute) {
     
   }
 
   ngOnInit(): void {
-    let id: string | undefined;
+   
     this.activatedRoute.params.subscribe(params =>{
-      id = params['id'];
+      this.id = params['id'];
     });
-    if (id){
-      this.game = this.gameService.getById(id);
+    
+    this.loadGame();
+    this.loadLinks();
+  }
+
+  private loadGame(){
+    if (this.id){
+      this.game = this.gameService.getById(this.id);
     }
+  }
+
+  private loadLinks() {
     this.links = [];
     for (let i = 0; i <= 10; i++) {
       this.links?.push(`Item ${i}`);
     }
-
-  }
-
-  private loadGame(){
-
-  }
-
-  private loadLinks() {
-
   }
 
 }
