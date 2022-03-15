@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Game } from '../game';
@@ -14,7 +15,8 @@ export class GameDetailComponent implements OnInit {
   private id: string | undefined;
 
   constructor(private gameService: GameService,
-      private activatedRoute: ActivatedRoute) {
+      private activatedRoute: ActivatedRoute,
+      private location: Location) {
     
   }
 
@@ -26,6 +28,10 @@ export class GameDetailComponent implements OnInit {
     
     this.loadGame();
     this.loadLinks();
+  }
+
+  back(): void{
+    this.location.back();
   }
 
   private loadGame(){
