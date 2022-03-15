@@ -6,8 +6,14 @@
     <div>
         <ul *ngFor="let link of links">
             <li>
-                {{ link }}
+                <div>
+                    <h3>{{ link.id }}</h3>
+                    <p *ngIf="link.tags">{{link.tags}}</p>
+                    {{ link.rating }}
+                </div>
+                
             </li>
+            
         </ul>
 
     </div>

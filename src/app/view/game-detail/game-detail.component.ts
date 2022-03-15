@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Game } from '../game';
+import { GameLink, IGameLink } from '../game-links';
 import { GameService } from '../game.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { GameService } from '../game.service';
 })
 export class GameDetailComponent implements OnInit {
   game: Game | undefined;
-  links?: string[];
+  links?: IGameLink[];
   private id: string | undefined;
 
   constructor(private gameService: GameService,
@@ -43,7 +44,8 @@ export class GameDetailComponent implements OnInit {
   private loadLinks() {
     this.links = [];
     for (let i = 0; i <= 10; i++) {
-      this.links?.push(`Item ${i}`);
+      
+      this.links?.push(new GameLink(`Link${i}`, `${i}-game`, `https://www.${i}.in` , i, [`TAG${i}`, `${i}-tag`]));
     }
   }
 
