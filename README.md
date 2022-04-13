@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
+Building with travis ci try
+
 ## Angular Tutorial
 
 * [Best Practice Organize](https://medium.com/dev-jam/5-tips-best-practices-to-organize-your-angular-project-e900db08702e)
