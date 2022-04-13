@@ -1,5 +1,8 @@
 # Gametutor
 
+[![Build Status](https://app.travis-ci.com/mistadave/gametutor.svg?branch=master)](https://app.travis-ci.com/mistadave/gametutor)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
 Building with travis ci try
