@@ -16,5 +16,5 @@ install:
   - npm install
 
 script:
-  - npm run build:production
+  - npm run build
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
