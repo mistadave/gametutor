@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ViewRoutingModule } from './view-routing.module';
 import { GameComponent } from './game/game.component';
 import { GameDetailComponent } from './game-detail/game-detail.component';
+import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +17,9 @@ import { GameDetailComponent } from './game-detail/game-detail.component';
   ],
   imports: [
     CommonModule,
-    ViewRoutingModule
+    ViewRoutingModule,
+    SharedModule,
+    FormsModule
   ]
 })
 export class ViewModule { }

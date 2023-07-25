@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "gametutor"
+  "cli": {
+    "analytics": "1b28129c-1e70-40cb-a5aa-447ef16a9b67"
+  }
 }

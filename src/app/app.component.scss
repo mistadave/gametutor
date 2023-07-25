@@ -1,68 +1,53 @@
 .toolbar {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    display: flex;
-    align-items: center;
     background-color: #1976d2;
     color: white;
     font-weight: 600;
-    flex-direction: row;
-    align-content: space-between;
-    img {
-        margin: 0 16px;
-    }
-    
-    span {
-        align-content: space-around;
-    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        align-content: space-between;
+        img {
+            margin: 0 16px;
+        }
 
-    .spacer {
-        width: 83%;
-    }
+        span {
+            align-content: space-around;
+        }
 
-    #twitter-logo {
-        height: 40px;
-        margin: 0 8px;
-        
-    }
-    #youtube-logo {
-        height: 40px;
-        margin: 0 16px;
-    }
+        .spacer {
+            width: 83%;
+        }
 
-    #twitter-logo:hover,
-    #youtube-logo:hover {
-        opacity: 0.8;
-        float: right;
+        #twitter-logo {
+            height: 40px;
+            margin: 0 8px;
+        }
+        #youtube-logo {
+            height: 40px;
+            margin: 0 16px;
+        }
+
+        #twitter-logo:hover,
+        #youtube-logo:hover {
+            opacity: 0.8;
+            float: right;
+        }
     }
 }
 
 .content {
+    position: relative;
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
+    margin: 82px auto auto auto;
+    // padding: 0 16px;
+    // max-width: 960px;
     flex-direction: column;
     align-items: center;
-  }
-
-.card {
-    all: unset;
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
+}

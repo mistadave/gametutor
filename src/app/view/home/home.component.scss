@@ -1,0 +1,8 @@
+.center-games{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: content;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
