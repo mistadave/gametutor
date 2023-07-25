@@ -1,4 +1,8 @@
-<h2>Games Home</h2>
+<h1>Tutorials</h1>
+<div>
+    <h4>Search</h4>
+    <input type="text" [(ngModel)]="searchText" placeholder="Search by name" />
+</div>
 <div class="center-games">
-    <app-game *ngFor="let game of games" [game]="game"></app-game>
+    <app-game *ngFor="let game of games | nameFilter: searchText" [game]="game"></app-game>
 </div>
