@@ -7,18 +7,14 @@
         <p>Platform: {{game.platform}}</p>
         <p>Genre: {{game.genre}}</p>
     </div>
-    <div>
-        <ul *ngFor="let link of links">
-            <li>
-                <div>
-                    <h3>{{ link.id }}</h3>
-                    <p *ngIf="link.tags">{{link.tags}}</p>
-                    {{ link.rating }}
-                </div>
-                
-            </li>
-            
-        </ul>
+    <div class="box">
+
+        <div *ngFor="let link of links">
+            <h3>{{ link.id }}</h3>
+            <p *ngIf="link.tags">Tags: {{link.tags}}</p>
+            {{ link.rating }}
+            <a [href]="link.url">{{link.url}}</a>
+        </div>
 
     </div>
 </div>
