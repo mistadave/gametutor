@@ -9,8 +9,8 @@ export class GameService {
 
   constructor() { }
 
-  public getGame(){
-
+  public getGames(): Game[]{
+    return GAMES;
   }
 
   public getById(id: string): Game | undefined{
@@ -19,5 +19,10 @@ export class GameService {
 
   public add(game: Game){
     GAMES.push(game);
+  }
+
+  public remove(id: string){
+    const idToDelete = GAMES.findIndex(g => g.id === id);
+    GAMES.splice(idToDelete);
   }
 }

@@ -2,7 +2,7 @@ export interface Game {
     id: string;
     name: string;
     link: string;
-    type?: string;
+    genre?: string;
     releaseDate?: Date;
     platform?: string[];
 }

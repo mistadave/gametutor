@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GAMES } from '../mock-games';
+import { GameService } from '../game.service';
+import { Game } from '../game';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +10,12 @@ import { GAMES } from '../mock-games';
 })
 export class HomeComponent implements OnInit {
   searchText: string = ''; 
-  games = GAMES;
+  games: Game[] = [];
 
-  constructor() { }
+  constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
+    this.games = this.gameService.getGames();
   }
 
   searchChangeFn(value: string){
